@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links de Iago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent 60%);
+      z-index: 0;
+      animation: rotate 20s linear infinite;
+    }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    main {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 2rem;
+      border: 3px solid #fff;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .link {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 12px;
+      margin: 0.5rem 0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid #333;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .link:hover {
+      background: #292929;
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Substitua a URL abaixo pelo link da sua imagem de perfil do YouTube -->
+    <img src="https://yt3.ggpht.com/ytc/AKedOLQF0gXxEXEMPLO=s176-c-k-c0x00ffffff-no-rj" alt="Perfil YouTube">
+
+    <a href="https://youtube.com/@seucanal" class="link" target="_blank">YouTube</a>
+    <a href="https://x.com/seuperfil" class="link" target="_blank">X (Twitter)</a>
+    <a href="https://tiktok.com/@seuperfil" class="link" target="_blank">TikTok</a>
+    <a href="https://instagram.com/seuperfil" class="link" target="_blank">Instagram</a>
+  </main>
+</body>
+</html>
