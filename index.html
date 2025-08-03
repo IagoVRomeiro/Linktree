@@ -1,166 +1,199 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Links de Iago Romeiro</title>
+
   <meta name="description" content="Links para redes sociais de Iago Romeiro: YouTube, TikTok, Instagram e X (Twitter).">
-  <link rel="icon" href="https://ih1.redbubble.net/image.5230897950.2234/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" type="image/png">
+
+  <link rel="icon" href="https://yt3.googleusercontent.com/KwXvYlxrzqk9owF0aQDJDR2Ld-mPyZ_gdpjz8D9ktodr-rUNnAaiuROv1mcC5bY1Vjz9KH1I=s176-c-k-c0x00ffffff-no-rj" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    :root {
-      --background-color: #121212;
-      --surface-color: #1e1e1e;
-      --accent-color: #5d5d5d;
-      --text-color: #ffffff;
-      --link-hover-color: #333333;
-      --border-color: #333333;
-    }
 
     * {
+
       margin: 0;
+
       padding: 0;
+
       box-sizing: border-box;
+
     }
 
     body {
+
       font-family: 'Inter', sans-serif;
-      background: var(--background-color);
-      color: var(--text-color);
+
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+
+      color: white;
+
       display: flex;
+
       flex-direction: column;
+
       align-items: center;
+
       justify-content: center;
+
       min-height: 100vh;
+
       padding: 2rem;
+
       position: relative;
+
       overflow: hidden;
-      text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+
     }
 
     body::before {
+
       content: "";
+
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at center, rgba(93, 93, 93, 0.08), transparent 70%);
+
+      top: -50%;
+
+      left: -50%;
+
+      width: 200%;
+
+      height: 200%;
+
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent 60%);
+
       z-index: 0;
-      pointer-events: none;
+
+      animation: rotate 20s linear infinite;
+
+    }
+
+    @keyframes rotate {
+
+      from { transform: rotate(0deg); }
+
+      to { transform: rotate(360deg); }
+
     }
 
     main {
+
       position: relative;
+
       z-index: 1;
+
       display: flex;
+
       flex-direction: column;
+
       align-items: center;
-      width: 100%;
-      max-width: 400px;
-      padding: 2rem;
-      background: rgba(30, 30, 30, 0.5);
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
     }
 
     img {
+
       width: 120px;
+
       height: 120px;
+
       border-radius: 50%;
+
       object-fit: cover;
-      margin-bottom: 1rem;
-      border: 3px solid var(--accent-color);
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      margin-bottom: 2rem;
+
+      border: 3px solid #fff;
+
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+
+      transition: transform 0.3s ease;
+
     }
 
     img:hover {
+
       transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    }
 
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.25rem;
-      font-weight: 700;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-    }
-
-    h2 {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #b3b3b3;
-      margin-bottom: 2rem;
-      text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    }
-
-    .links-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
     }
 
     .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-      background: var(--surface-color);
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 600;
-      border: 1px solid var(--border-color);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      position: relative;
-      overflow: hidden;
-    }
 
-    .link::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      transition: width 0.4s ease, height 0.4s ease;
+      display: block;
+
+      width: 100%;
+
+      max-width: 300px;
+
+      background: #1f1f1f;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 1rem;
+
+      border-radius: 12px;
+
+      margin: 0.5rem 0;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+      transition: all 0.3s ease;
+
+      border: 1px solid #333;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
     }
 
     .link:hover {
-      background: var(--link-hover-color);
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-    }
-    
-    .link:hover::before {
-      width: 300%;
-      height: 300%;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <img src="https://ih1.redbubble.net/image.5230897950.2234/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" alt="Foto de perfil de Iago">
-    <h1>Iago Romeiro</h1>
-    <h2>@IAG00</h2>
 
-    <div class="links-container">
-      <a href="https://www.youtube.com/@iagoo_exe" class="link" target="_blank" aria-label="Perfil de Iago no YouTube">YouTube</a>
-      <a href="https://x.com/iagoo_exe" class="link" target="_blank" aria-label="Perfil de Iago no X (Twitter)">X (Twitter)</a>
-      <a href="https://www.tiktok.com/@iag0__0" class="link" target="_blank" aria-label="Perfil de Iago no TikTok">TikTok</a>
-      <a href="https://www.instagram.com/iagovromeiro/" class="link" target="_blank" aria-label="Perfil de Iago no Instagram">Instagram</a>
-    </div>
+      background: #292929;
+
+      transform: scale(1.02);
+
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+
+    <img src="https://ih1.redbubble.net/image.5230897950.2234/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" alt="Perfil YouTube">
+
+
+
+    <a href="https://www.youtube.com/@iagoo_exe" class="link" target="_blank" aria-label="Perfil de Iago no YouTube">YouTube</a>
+
+    <a href="https://x.com/iagoo_exe" class="link" target="_blank" aria-label="Perfil de Iago no Twitter (X)">X (Twitter)</a>
+
+    <a href="https://www.tiktok.com/@iag0__0" class="link" target="_blank" aria-label="Perfil de Iago no TikTok">TikTok</a>
+
+    <a href="https://www.instagram.com/iagovromeiro/" class="link" target="_blank" aria-label="Perfil de Iago no Instagram">Instagram</a>
+
   </main>
+
 </body>
+
 </html>
